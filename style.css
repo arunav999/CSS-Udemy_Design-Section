@@ -8,6 +8,11 @@ FONT SIZE SYSTEM (px)
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +24,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -39,6 +46,29 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
 }
 
 /* ------------------------ */
@@ -76,6 +106,10 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -89,6 +123,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -110,6 +147,7 @@ img {
 /* CHAIRS */
 .chair-box {
   padding: 24px;
+  
 }
 
 h3 {
@@ -134,6 +172,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
@@ -145,4 +186,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
 }
